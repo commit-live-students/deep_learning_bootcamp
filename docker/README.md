@@ -116,7 +116,7 @@ It should show something like this
     |=============================================================================|
     +-----------------------------------------------------------------------------+
 
-# Ask them to do only till this step let them download image on the spot or of possible do not share the steps below until Friday
+# The following steps are to performed on Saturday Nov 3, 2018 morning only
 
 Download GreyAtom's DL Docker Image
 `docker pull saiprasadb/ga-dl-workshop:v0.1`
