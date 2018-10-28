@@ -59,7 +59,7 @@ Let's get started with installing CUDA
 
 Download CUDA Drivers from here 
 
-`https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1604-10-0-local-10.0.130-410.48_1.0-1_amd64`
+`wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1604-10-0-local-10.0.130-410.48_1.0-1_amd64`
 
 Installation Instructions:
 `sudo dpkg -i cuda-repo-ubuntu1604-10-0-local-10.0.130-410.48_1.0-1_amd64`
@@ -72,7 +72,7 @@ Installation Instructions:
 
 If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers
 
-`docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f`
+`sudo docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f`
 
 `sudo apt-get purge -y nvidia-docker`
 
