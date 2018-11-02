@@ -94,7 +94,7 @@ Install nvidia-docker2 and reload the Docker daemon configuration
 
 Test nvidia-smi with the latest official CUDA image
 
-`docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi`
+`sudo docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi`
 
 
 It should show something like this
@@ -119,7 +119,7 @@ It should show something like this
 # The following steps are to performed on Saturday Nov 3, 2018 morning only
 
 Download GreyAtom's DL Docker Image
-`docker pull saiprasadb/ga-dl-workshop:v0.1`
+`sudo docker pull saiprasadb/ga-dl-workshop:v0.1`
 
 Run the DL Docker Image
 `nvidia-docker run -it -p 8888:8888 --ipc=host saiprasadb/ga-dl-workshop:v0.1 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/home/jovyan/'`
