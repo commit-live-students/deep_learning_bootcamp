@@ -68,7 +68,7 @@ Installation Instructions:
 
 `sudo apt-get update`
 
-`sudo apt-get install cuda`
+`sudo apt-get install -y cuda`
 
 If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers
 
@@ -88,6 +88,7 @@ Add the package repositories
 `sudo apt-get update`
 
 Install nvidia-docker2 and reload the Docker daemon configuration
+
 `sudo apt-get install -y nvidia-docker2`
 
 `sudo pkill -SIGHUP dockerd`
