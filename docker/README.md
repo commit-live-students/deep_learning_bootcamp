@@ -120,9 +120,9 @@ It should show something like this
 # The following steps are to performed on Saturday Nov 3, 2018 morning only
 
 Download GreyAtom's DL Docker Image
-`sudo docker pull saiprasadb/ga-dl-workshop:v0.1`
+`sudo docker pull saiprasadb/ga-dl-workshop:latest`
 
 Run the DL Docker Image
-`nvidia-docker run -it -p 8888:8888 --ipc=host saiprasadb/ga-dl-workshop:v0.1 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/home/jovyan/'`
+`sudo nvidia-docker run -itd -p 8888 --volume=/home/$USER/notebooks:/home/jovyan/notebooks --name=ga-dl --ipc=host saiprasadb/ga-dl-workshop:latest jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/home/jovyan/'`
 
 
