@@ -9,7 +9,7 @@ Steps to execute the notebooks on Google Cloud Platform
 - Execute the command `bash install.sh`
 - The entire installation would take about 10-15 minutes to complete.
 - This installation will provide you with a docker container where all the required libraries are installed and data is store in data folder
-- Once the installation is complete go to the browser and navigate to http://<external ip>:8888 
+- Once the installation is complete go to the browser and navigate to http://<-external ip->:8888 
 - Enter the alphanumeric authorisation token displayed on the terminal and log-in
 - Open the terminal from within Jupyter Notebook and clone this repository again to get access to the notebooks within docker container
 - You may have to change the paths to data files in the notebook depending on the directory in which you clone the repository
